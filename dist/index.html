@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta author="Abdelrahman Abdelnasser">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Travel App</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+ <body>
+<div id = "app">
+  <h1 class ="holder headline">
+    Travel App
+  </h1>
+  <div class="data_container">
+    <div class ="holder city">
+      <label for="city">Where do you want to go?</label>
+      <input type="text" id="city" placeholder="enter you destenation here">
+    </div>
+    
+      <form class ="holder date" action="">
+        <div>
+          <label for="date">when do you want to go?</label>
+          <input id="date" type="date">
+        </div>
+        <div>
+          <label for="date">when do you want to return?</label>
+        <input id="end_date" type="date">
+        </div>
+  
+        
+  
+      </form>
+      <div class="holder generate">
+        <button id="generate" type = "submit"> Start </button>
+  
+      </div>
+  
+  </div>
+  
+  
+    <div id = "entryHolder"></div>
+  
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }
+     </script>
+
+<script type="text/javascript" src="main.js"></script></body>
+</html>
+
